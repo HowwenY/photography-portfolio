@@ -133,7 +133,7 @@ main {
 }
 
 .gallery {
-  column-count: 2;
+  column-count: 3;
   column-gap: 12px;
 }
 .gallery img {
@@ -165,6 +165,10 @@ main {
   justify-content: space-between;
   color: var(--muted);
   font-size: .72rem;
+}
+
+@media (max-width: 1050px) {
+  .gallery { column-count: 2; }
 }
 
 @media (max-width: 900px) {
